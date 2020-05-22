@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    Write Code Here.
+    <game></game>
     <!--
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
@@ -9,13 +9,21 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
+  // @ is an alias to /src
+  // import HelloWorld from '@/components/HelloWorld.vue'
+  import game from '@/components/game'
 
-export default {
-  name: 'Home',
-  components: {
-    // HelloWorld
+  export default {
+    name: 'Home',
+    components: {
+      game,
+      // HelloWorld
+    }
   }
-}
 </script>
+
+<style lang="stylus" scoped>
+  .home
+    display flex
+    justify-content center
+</style>
