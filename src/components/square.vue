@@ -14,7 +14,8 @@
     },
     methods: {
       setContent() {
-        this.content = 'X';
+        this.content = this.$store.state.nextPlayer;
+        this.$store.commit('changeNextPlayer')
       },
     }
   }

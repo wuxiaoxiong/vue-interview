@@ -12,11 +12,15 @@
     name: 'game',
     data() {
       return {
-        nextPlayer: 'X',
       }
     },
     components: {
       board,
+    },
+    computed: {
+      nextPlayer() {
+        return this.$store.state.nextPlayer
+      },
     }
   }
 </script>
